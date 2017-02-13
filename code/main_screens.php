@@ -1,4 +1,4 @@
-<? include('apollo_head.htm'); ?>
+<?php include('apollo_head.htm'); ?>
 
 <SCRIPT>
 <!--

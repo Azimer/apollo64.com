@@ -1,4 +1,4 @@
-<? include('info_head.htm'); ?>
+<?php include('info_head.htm'); ?>
 
 <BODY onload="javascript:changeall('files');" text="#ffffff" link="#f0f0ff" vlink="#fff0f0" alink="#f0fff0" marginwidth="0" marginheight="0" leftmargin="0" rightmargin="0" topmargin="0">
 
