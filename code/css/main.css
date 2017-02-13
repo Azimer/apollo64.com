@@ -1,0 +1,28 @@
+BODY{
+scrollbar-base-color: darkgray; 
+scrollbar-arrow-color: gray; 
+scrollbar-DarkShadow-Color: white; 
+bgcolor: #000000; 
+background: URL(../../images/apollo_iframe_bg.gif) fixed;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+TD{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+} 
+
+A{
+text-decoration: underline;
+color: #ffaaaa;
+}
+
+A:active{
+text-decoration: underline;
+color: #ffaaaa;
+}
+
+A:hover{
+text-decoration: underline;
+color: #ffffff;
+}

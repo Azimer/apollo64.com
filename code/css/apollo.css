@@ -1,0 +1,28 @@
+BODY{
+bgcolor: #000000;
+}
+
+TD{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+} 
+
+A{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:active{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:hover{
+text-decoration: underline;
+color: #ffffff;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
