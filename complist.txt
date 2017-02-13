@@ -1,0 +1,69 @@
+****************************************************************************************
+Playable (runs independantly of either graphics or audio... but one is present at least)
+****************************************************************************************
+Aerofighters Assault (Euro).z64                 - fully playable(asks to save microcode)
+Airboarders 64 (Euro).v64                       - fully playable
+Bass Hunter 64 (USA).z64                        - fully playable(flickers)
+Bomberman Hero (USA).v64                        - fully playable
+Bust 'A' Move 2 (Euro).v64                      - fully playable
+Bust 'A' Move '99 (USA).z64                     - fully playable
+Cruis'n The World                               - fully playable
+Castlevania - Legacy of Darkness (U) [!].z64    - fully playable
+Donkey Kong 64 (USA).v64                        - fully playable(does not freeze on intro)
+Doraemon - Mittsu no Seireiseki (J) [!].v64     - fully playable
+duke64.v64                                      - fully playable
+Extreme G (USA).v64                             - fully playable
+Holy Magic Century (Euro - France).n64          - fully playable(plays to fast needs fps limiter)
+I.S.S. 64 (Euro).v64                            - fully playable
+I.S.S. '98 (USA).z64                            - fully playable
+LEGO Racers (USA).z64                           - fully playable
+mario64 (USA).z64                               - fully playable
+Monopoly 64 (USA).z64                           - fully playable(slow and boring :)
+Ridge Racer 64 (USA).v64                        - fully playable
+Snowboard Kids (USA).v64                        - fully playable
+WaveRace 64 (U).z64                             - fully playable
+waverus 64 (j).z64                              - fully playable
+
+****************************************************************************************
+Mostly Playable (runs well but definately has a CPU problem)
+****************************************************************************************
+64 Hanafuda - Tenshi No Yakusoku (JAP).v64      - fully playable but has alot of slowdowns
+F1 Pole Position (USA).v64                      - hangs randomly while playing
+
+
+****************************************************************************************
+Intro (runs the intro but freezes at the copyright/title screen or during a demo in the game)
+****************************************************************************************
+
+
+****************************************************************************************
+Unplayable - Stable (The emulator does not crash/display an error)
+****************************************************************************************
+A Bug's Life (Euro - France).z64                - hangs during intro, fps keep going
+Command and Conquer (USA).z64                   - hangs after loading, fps keep going
+Earthworm Jim 3D (USA).v64                      - hangs with a weird white screen when loaded, fps keep going
+Excitebike 64 Kiosk Demo (USA).z64              - hangs with a black screen when loaded, fps keep going
+Paperboy (USA).z64                              - hangs with a weird white screen when loaded, fps keep going
+Penny Racers (USA).v64                          - hangs with a weird white screen when loaded, fps keep going
+
+
+
+****************************************************************************************
+Unplayable - Unstable (The emulator will crash or display an error and need to quit)
+****************************************************************************************
+AI Shogi 3 (J) [!].v64                          - Crashes after loading
+Alice no Wakuwaku Trump World (J) [!].v64       - Crashes after loading
+All Star Baseball '99 (Euro).v64                - Crashes after loading
+Body Harvest (Euro).z64                         - Crashes after loading
+Buck Bumble (Euro).v64                          - Crashes after loading
+Chameleon Twist (USA).v64                       - Controller pack error
+F1 World Grand Prix 2 (Euro).v64                - Controller pack error
+Harvest Moon 64 (USA).z64                       - Crashes after loading
+Kirby 64 - The Crystal Shards (U) [!].rom       - Crashes after loading
+Neon Genesis Evangelion (J) [!].v64             - Error Error Error, EEP-ROM Size is 4K???
+
+
+***********************************
+Unable to detect microcode settings
+***********************************
+MicrocodeID:        $12B6BD07,       Rom:         AERO FIGHTER ASSAUL

@@ -1,0 +1,37 @@
+The Adventures of an Emulation Programmer
+
+7:51 PM 4/11/2013 - Progress
+   I Will be shocked if anyone still reads this.  I decided awhile back to take much of what I do internally and
+not really care about any public knowledge of any of the work I do.  Much of what I am working on is for myself and
+my own satisfaction.  That said, I decided to start back on square 1 with "ApolloX".  ApolloX from a couple years
+ago began to feel too much like Apollo v0.10.  I think I need a fresh codebase.  Right now I have the main emulation
+routine down.  I have a basic UI completed in .Net (not sure if it will remain in .net).  And I am starting in on the
+CPU.  I am taking a different approach to the CPU this time.  Instead of trying to fix what apollo did before, I am
+reading documentation, reading other emulator's interpretation and deciding what needs to be fixed from there.  I hope
+over the next few weeks I can keep a status going letting us know how things are going.  So right now... CPU core is at
+5%.  On a person level, I've been away so long because I've finally gotten engaged, married and having a child.  I am
+sure I am forgiven for being so absent. :)  More to come soon.  I really want to finish this project once in for all.
+
+11:44 PM 10/17/2011 - Status
+   I've had a lot of computer trouble until just a couple months ago.  Since then I've been hard at work on a new
+version of Apollo which I am calling ApolloX (for now).  I am first going to concentrate on getting released to the
+public a new version of my audio plugin.  I am optimizing the plugin for Project64 1.6.  So far it sounds fantastic
+with the frame limiter on.  I hope to have something by the end of the week.  I have a few other projects going on
+but they are too early to even "blog" about.  Thanks to those who keep encouraging me to continue and getting my
+interest going again.  You know who you are. :o)
+
+11:00 PM 4/9/2011 - No title
+   Just posting here to say I re-fixed the site.  When Martin moved me the site didn't follow then I got really busy 
+with work.  Sorry if the site is still old skool/ugly.  I have made some progress on a new build.  Currently working 
+on the UI and likely went overboard.  At this point I think I will just implement a basic menu->file->open and get to 
+what I am actually interested in... emulation.  I am also going to remove these old outdated entries since they are no 
+longer interesting.
+
+1:56 PM 2/8/2011 – Resurrection
+   So I logged into IM and by chance talked to Gent.  He informed me that emutalk and emulation64 has undergone some 
+sort of renewal.  Indeed it has.  I have seen people I haven’t seen in years.  I have also reclaimed access to my 
+website and will not lose it again. :)  I was thrilled to see a few new faces as well and I welcome them into the 
+emulation64 family.  In the coming weeks, I plan to fix the website a bit and see about getting some new development 
+uploaded to the site.  I have never been much of a website artist so for now it will remain much of the same, only 
+functional.  A lot has happen in the last 5 years but the enjoyment I get out of emulation hasn’t changed.  More to 
+come...

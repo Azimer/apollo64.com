@@ -1,0 +1,14 @@
+<script language="Javascript1.2" src="scrollable.js"></script>
+
+<!-- Info Frame -->
+<layer name="n64_info" src="info_n64.htm" width="47" height="210" left="0" top="1" visibility="inherit" z-index="37"></layer>
+
+<!-- Background Layer -->
+<layer name="n64_bg" background="../images/apollo_iframe_n64_bg.gif" width="490" height="295" left="53" top="10" visibility="inherit" z-index="38" clip="490,295"></layer>
+
+<!-- Main Frame -->
+<layer name="n64_main" src="main_n64.htm" width="490" height="295" left="53" top="10" visibility="inherit" z-index="39" clip="490,295"></layer>
+
+<script language="javascript1.2"> <!--
+  c = new Scrollable(document.n64_main);
+// --> </script>

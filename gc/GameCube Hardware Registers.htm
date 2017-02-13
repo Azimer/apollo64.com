@@ -1,0 +1,477 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>GameCube Hardware Registers</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</head>
+
+<body text="#000000">
+
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 18.0pt">GameCube Hardware Registers</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 10.0pt">Based on Titanik’s Information</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 18.0pt">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 10.0pt">Last Updated: September 24, 2003</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 10.0pt">Compiled by: Azimer</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Note: If you have any 
+new information or bugfixes, PLEASE contact me on IRC.</span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">&nbsp;</span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Note 2: This document 
+may be difficult to read and inconsistently formatted, please bare with me.&nbsp; 
+Information is the top priority and format </span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">is the second.&nbsp; These 
+problems will be resolved as information is more concrete.&nbsp; I do plan on adding 
+detailed documents later for each register set.</span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">&nbsp;</span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">&nbsp;</span></b></p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>CP (Command 
+  Processor) :</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>&nbsp;</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC000000</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">&nbsp;</span></b></p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>PE (Pixel 
+  Engine) :</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>&nbsp;</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC001000</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">&nbsp;</span></b></p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>VI (Video 
+  Interface) : (Information analyzed on a NTSC console)</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in"><b>&nbsp;</b></p>
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; 
+  0123 4567 89AB CDEF 0123 4567 89AB CDEF</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002000&nbsp; R/W&nbsp; 
+16 bit&nbsp;&nbsp;&nbsp; Vertical Timing Register *Untested*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00AA AAAA AAAA EEEE</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+A = Active Video (In HalfLines)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Equalization pulse in half lines</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002002&nbsp; R/W&nbsp; 
+16 bit&nbsp;&nbsp;&nbsp; Display Configuration Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 00PP LLTT DIRE</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+PP = Current Video Format</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 - NTSC 1 - PAL 2 - MPAL 3 - Debug</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+LL = Enables Display Latch 0 *In Progress*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 - Off 1 - On for 1 field</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2 - On for 2 fields 3 - Always On</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+TT = Enables Display Latch 1 *In Progress*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 - Off 1 - On for 1 field</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2 - On for 2 fields 3 - Always On</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+D = Selects 3D Display Mode</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+I = Interlace Selector *In Progress*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 = Interlaced, 1 = Non-Interlaced</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+R = Reset - Clears all data requests</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+and puts VI into its idle state.</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Enable - Enables video timing</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+generation and data request.</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002004&nbsp; R/W&nbsp; 
+32 
+bit&nbsp;&nbsp; Horizontal Timing 0 Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0SSS SSSS 0EEE EEEE 0000 000W WWWW WWWW</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S = Horizontal Sync Start to Color Burst End</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Horizontal Sync Start to Color Burst Start</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+W = Halfline Width (W*16 = Width (720))</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002008&nbsp; R/W&nbsp; 
+32 
+bit&nbsp;&nbsp; Horizontal Timing 1 Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 0SSS SSSS SSSE EEEE EEEE EWWW WWWW</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S = Half line to horizontal blanking end</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Horizontal Sync Start to horizontal blank end</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+W = Horizontal Sync Width</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Setting bit 0 seems to blackout the screen.</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Similar to ViBlack??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00200C&nbsp; R/W&nbsp; 
+32 
+bit&nbsp;&nbsp;&nbsp; Odd Field Vertical Timing Register *Untested*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002010&nbsp; R/W&nbsp; 
+32 
+bit&nbsp;&nbsp;&nbsp; Even Field Vertical Timing Register *Untested*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002014&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Odd Field Burst Blanking Interval Register *Untested*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002018&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Even Field Burst Blanking Intverval Register *Untested*</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00201C&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Top Field Base Register (L)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+000? XXXX FFFF FFFF FFFF FFF0 0000</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+X = Horizontal Offset of the left-most pixel</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+within the first word of the fetched</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+picture.</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+F = External Memory Address of frame buffer</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002020&nbsp; R/W&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; Top Field Base Register (R) (Only valid in 3D Mode)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 0000 FFFF FFFF FFFF FFF0 0000</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+F = External Memory Address of frame buffer</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002024&nbsp; R/W&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; Bottom Field Base Register (L)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 0000 FFFF FFFF FFFF FFF0 0000</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+F = External Memory Address of frame buffer</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002028&nbsp; R/W&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; Bottom Field Base Register (R) (Only valid in 3D Mode)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 0000 FFFF FFFF FFFF FFF0 0000</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+F = External Memory Address of frame buffer</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00202C&nbsp; R&nbsp;&nbsp;&nbsp; 
+32 
+bit&nbsp;&nbsp;&nbsp; Display Position Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 00VV VVVV VVVV 0000 00HH HHHH HHHH</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002030&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Display Interrupt 0</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+I00E 00VV VVVV VVVV 0000 00HH HHHH HHHH</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+I = Interrupt Status (1=Active) (Write to clear)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Interrupt Enable Bit</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+V = Vertical Position</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+H = Horizontal Position</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002034&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Display Interrupt 1</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Refer to Display Interrupt 0</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002038&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Display Interrupt 2</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Refer to Display Interrupt 0</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00203C&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Display Interrupt 3</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Refer to Display Interrupt 0</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002040&nbsp; W&nbsp;&nbsp;&nbsp; 16 
+bit?&nbsp;&nbsp; Unknown</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002042&nbsp; W&nbsp;&nbsp;&nbsp; 16 
+bit?&nbsp;&nbsp; Unknown</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002044&nbsp; W&nbsp;&nbsp;&nbsp; 16 
+bit?&nbsp;&nbsp; Unknown</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002046&nbsp; W&nbsp;&nbsp;&nbsp; 16 
+bit?&nbsp;&nbsp; Unknown</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002048&nbsp; R/W&nbsp; 
+32 
+bit&nbsp;&nbsp;&nbsp; Scaling Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+WWWW WWWW ???? ???? 000E 000V VVVV VVVV</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+W = Frame Buffer Width (divided by 16)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = Enable Horizontal Scaling</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+V = U1.8 Scaler Value (0x160 Works for 320)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00204C thru 
+CC002067&nbsp; Skipped for now (AA stuff)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00206C&nbsp; R/W&nbsp; 
+16 
+bit&nbsp;&nbsp;&nbsp; VI Clock Select Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0000 0000 0000 000S</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S = 0 - 27 Mhz video clk</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1 - 54 Mhz video clk (Progressive Mode)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC002070&nbsp; R/W&nbsp; 
+16 bit&nbsp;&nbsp;&nbsp;Holds 0x280, but has no effect on change (Possibly for 
+Progressive)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+I can not test this theory without a TV that supports Progressive</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>PI (Processor Interface) : *This is my current work in 
+progress…&nbsp; most information is misleading*</b></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Description&nbsp;&nbsp;&nbsp; 0123 4567 89AB CDEF 0123 4567 89AB CDEF</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC003000&nbsp; R&nbsp;&nbsp;&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Cause Register </span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+xxxx xxxx xxxx xxxx xxHG 
+CPTV MDAE SKWR</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+R = Error</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+W = Reset Switch Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+K = DI Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S = SI Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+E = EXI Interrupt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+A = AI Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+D = DSP Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+M = MI Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+V = VI Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+T = Pixel Engine Token</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+P = Pixel Engine Finish</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+C = CP Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+G = Debug Interrupt</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+H = HSP ??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC003004&nbsp; R/W&nbsp; 
+32 bit&nbsp;&nbsp;&nbsp; Interrupt Mask (See CC003000 for bits)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC003010&nbsp; ?/?&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; FIFO End??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC003014&nbsp; ?/?&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; FIFO Write Pointer??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00301C&nbsp; ?/?</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC003024&nbsp; R/W&nbsp; 32 
+bit?&nbsp;&nbsp; Reset? – Writing anything here seems to cause a complete reset.</span></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b>MI (Memory Interface) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC004010&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; ??? (just set it to 0xFF)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00401C&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; MI Mask Register??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00401E&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; MI Cause Register??</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC004020&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; ??? (just set it to zero)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC004022&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; ???</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC004024&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; ???</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC004028&nbsp; ?/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; ??? – 2 after init if RAM is 24MB</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>AI (Audio Interface) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0123 4567 89AB CDEF</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005000&nbsp; ?/?&nbsp; 16 
+bit?&nbsp;&nbsp; DSP Status</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005002&nbsp; ?/?&nbsp; 16 
+bit?&nbsp;&nbsp; DSP (2) \</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005004&nbsp; ?/?&nbsp; 16 
+bit?&nbsp;&nbsp; DSP (3)&nbsp; -- Communication with DSP?</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005006&nbsp; ?/?&nbsp; 16 
+bit?&nbsp;&nbsp; DSP (4) /</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00500A&nbsp; ?/W&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; AI Control Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |???? ???D DRRA A??S|</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High D = DSP Int Mask, Low 
+D = DSP Int Bit</span></p>
+<p class="MsoNormal" style="text-indent: .5in; margin-left: 5.0in">
+<span style="font-family: Courier New">High R = ARAM Int Mask, Low R = DSP Int 
+Bit</span></p>
+<p class="MsoNormal" style="text-indent: .5in; margin-left: 5.0in">
+<span style="font-family: Courier New">High A = AI Int Mask, Low A = AI Int Bit</span></p>
+<p class="MsoNormal" style="text-indent: .5in; margin-left: 5.0in">
+<span style="font-family: Courier New">S = RESET Bit (Resets DSP?)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005030&nbsp; ?/W&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; DMA Start address (High)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005032&nbsp; ?/W&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; DMA Start address (Low)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC005036&nbsp; ?/W&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; DMA Control &amp; DMA length&nbsp; &nbsp;&nbsp; |SLLLL LLLL LLLL LLLL|&nbsp; S = Status D = 
+Length</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Write (Length/4)&amp;0x7FFF for Length. Set S to Play, Clear 
+S to Stop</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00503A&nbsp; R/?&nbsp; 16 
+bit&nbsp;&nbsp;&nbsp; DMA Bytes left</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>DI (DVD Interface) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006000</span></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b>SI (Serial Interface) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006400</span></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b>EXI (Expansion Interface) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006800&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 0 Status</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x1000 – Something is inserted into Device 1</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x2000 – Something is inserted into Device 2</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0800 – EXT Interrupt Occurred (Will trigger when 
+device removed)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0400 – EXT Interrupt Mask</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0380 – Device Select (0, 1, 2, 4, 5 seem valid)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0070 - Frequency</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0008 – TC Interrupt Occurred</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0004 – TC Interrupt Mask</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0002 – EXI Interrupt Occurred</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0001 – EXI Interrupt Mask (1-Enabled)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006804&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 0 DMA Start Address – Must be 32 byte aligned</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006808&nbsp; ?/?&nbsp; 32 
+bit? &nbsp; EXI Channel 0 DMA Transfer Length</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00680C&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 0 Control Register</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0030 – EXI Data Size for Immediate (0 = Byte, 2 = 
+Half-Word, 3 = Word)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x000C – EXI Transfer Type (0 = Read, 1 = Write, 
+2..3???)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0002 – EXI Transfer Mode (0 = Immediate, 1 = DMA)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 0x0001 – EXI Enable (Begins a Transfer)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006810&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 0 Immediate Data</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006814&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 1 Status (Bits same as Channel 0)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006818&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 1 DMA Start Address</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00681C&nbsp; ?/?&nbsp; 32 
+bit? &nbsp; EXI Channel 1 DMA Transfer Length</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006820&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 1 Control Register (Bits same as Channel 0)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006824&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 1 Immediate Data</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006828&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 2 Status (Bits same as Channel 0)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC00682C&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 2 DMA Start Address</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006830&nbsp; ?/?&nbsp; 32 
+bit? &nbsp; EXI Channel 2 DMA Transfer Length</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006834&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 2 Control Register (Bits same as Channel 0)</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006838&nbsp; ?/?&nbsp; 32 
+bit?&nbsp;&nbsp; EXI Channel 2 Immediate Data</span></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b>Streaming Interface (Audio) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC006C00&nbsp; ?/?&nbsp; 16 
+bit?&nbsp;&nbsp; Audio Stream Status</span></p>
+<p class="MsoNormal"><span style="font-family: Courier New">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Or with 0x40 for 32KHz and Clear 0x40 for 48Khz 
+(Unconfirmed)</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>GX (Graphics Display Processor) :</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<div style="mso-border-bottom-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 0in; padding-right: 0in; padding-top: 0in; padding-bottom: 1.0pt">
+  <p class="MsoNormal" style="border: medium none; padding: 0in">
+  <span style="font-family: Courier New">Location&nbsp; R/W&nbsp; Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span></div>
+<p class="MsoNormal"><span style="font-family: Courier New">CC008000&nbsp; ?/W&nbsp; 32 
+bit&nbsp;&nbsp;&nbsp; GX FIFO (Graphics Display Lists)</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">More to come…</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Sources:</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Titanik’s Crazy Nation Gamecube Source Pak #1; May 30, 2003, 
+“gcninfos1.txt”</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Audio demo by CrowTRobo; July 12, 2003, “ctr-snd.txt”</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Various documents provided by org, author of Dolwin.</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Costis of
+<a href="http://www.gcdev.com/" style="color: blue; text-decoration: underline; text-underline: single">
+www.gcdev.com</a></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>F|RES of TR64 fame.</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-&nbsp;&nbsp;&nbsp; 
+Various public documents</p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: .5in">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>All other information obtained by Azimer through probing GC and emulating 
+disc images on the PC.</p>
+<p class="MsoNormal"><span style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 10.0pt">*Sorry for not including 
+your email addresses.&nbsp; It prevents people from mass emailing all of you.*</span></p>
+
+</body>
+
+</html>

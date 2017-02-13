@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<TITLE>Apollo</TITLE>
+
+<STYLE TYPE="text/css"> 
+BODY{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+background: URL(../images/apollo_frames_bg_left.gif) fixed no-repeat
+}
+
+TD{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+} 
+
+A{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:active{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:hover{
+text-decoration: underline;
+color: #ffffff;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+</STYLE>
+
+
+<script language="JavaScript1.2">
+<!--
+function changeall(values) {
+
+  if  (values!="") {
+
+    document.layers["n64_info"].visibility = "hide";
+    document.layers["apollo_info"].visibility = "hide";
+    document.layers["news_info"].visibility = "hide";
+    document.layers["files_info"].visibility = "hide";
+    document.layers["status_info"].visibility = "hide";
+    document.layers["screens_info"].visibility = "hide";
+    document.layers["devlog_info"].visibility = "hide";
+    document.layers["links_info"].visibility = "hide";
+  
+    document.layers[values + "_info"].visibility = "show";
+
+  }
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY text="#ffffff" link="#f0f0ff" vlink="#fff0f0" alink="#f0fff0" marginwidth="0" marginheight="0" leftmargin="0" rightmargin="0" topmargin="0">
+
+<!-- N64 spinner -->
+<layer id="n64_spinner" width="51" height="51" left="67" top="21" visibility="show" z-index="1">
+  <A href="main_n64.htm" target="main" onclick="javascript:changeall('n64');"><IMG src="../images/n64_spinner.gif" width="51" height="51" border="0"><A/>
+</layer>
+
+<!-- Apollo logo -->
+<layer id="menu_logo" width="81" height="68" left="126" top="22" visibility="show" z-index="2">
+  <A href="main_apollo.htm" target="main" onclick="javascript:changeall('apollo');"><IMG src="../images/apollo_menu_logo.gif" width="81" height="68" border="0"></A>
+</layer>
+
+<!-- Menu button: News -->
+<layer id="menu_news" width="62" height="30" left="63" top="104" visibility="show" z-index="4">
+  <A href="main_news.htm" target="main" onclick="javascript:changeall('news');"><IMG src="../images/apollo_menu_news.gif" width="62" height="30" border="0"></A>
+</layer>
+
+<!-- Menu button: Files -->
+<layer id="menu_files" width="68" height="25" left="46" top="157" visibility="show" z-index="5">
+  <A href="main_files.htm" target="main" onclick="javascript:changeall('files');"><IMG src="../images/apollo_menu_files.gif" width="68" height="25" border="0"></A>
+</layer>
+
+<!-- Menu button: Screens -->
+<layer id="menu_screens" width="108" height="17" left="39" top="213" visibility="show" z-index="6">
+  <A href="main_screens.htm" target="main" onclick="javascript:changeall('screens');"><IMG src="../images/apollo_menu_screens.gif" width="108" height="17" border="0"></A>
+</layer>
+
+<!-- Menu button: Status -->
+<layer id="menu_status" width="89" height="19" left="41" top="264" visibility="show" z-index="7">
+  <A href="main_status.htm" target="main" onclick="javascript:changeall('status');"><IMG src="../images/apollo_menu_status.gif" width="89" height="19" border="0"></A>
+</layer>
+
+<!-- Menu button: DevLog -->
+<layer id="menu_devlog" width="104" height="35" left="50" top="303" visibility="show" z-index="8">
+  <A href="main_devlog.htm" target="main" onclick="javascript:changeall('devlog');"><IMG src="../images/apollo_menu_devlog.gif" width="104" height="35" border="0"></A>
+</layer>
+
+<!-- Menu button: Links -->
+<layer id="menu_links" width="65" height="35" left="66" top="355" visibility="show" z-index="9">
+  <A href="main_links.htm" target="main" onclick="javascript:changeall('links');"><IMG src="../images/apollo_menu_links.gif" width="65" height="35" border="0"></A>
+</layer>
+
+<!-- Info Layers -->
+<layer name="apollo_info" width="47" height="210" left="190" top="140" visibility="show" z-index="10"><IMG src="../images/apollo_info_apollo.gif" width="47" height="210" border="0"></layer>
+<layer name="n64_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="11"><IMG src="../images/apollo_info_n64.gif" width="47" height="210" border="0"></layer>
+<layer name="news_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="12"><IMG src="../images/apollo_info_news.gif" width="47" height="210" border="0"></layer>
+<layer name="files_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="13"><IMG src="../images/apollo_info_files.gif" width="47" height="210" border="0"></layer>
+<layer name="screens_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="14"><IMG src="../images/apollo_info_screens.gif" width="47" height="210" border="0"></layer>
+<layer name="status_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="15"><IMG src="../images/apollo_info_status.gif" width="47" height="210" border="0"></layer>
+<layer name="devlog_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="16"><IMG src="../images/apollo_info_devlog.gif" width="47" height="210" border="0"></layer>
+<layer name="links_info" width="47" height="210" left="190" top="140" visibility="hide" z-index="17"><IMG src="../images/apollo_info_links.gif" width="47" height="210" border="0"></layer>
+
+</BODY>
+</HTML>

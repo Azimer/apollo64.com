@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Memory Map</title>
+</head>
+
+<body text="#00FF00" bgcolor="#000000">
+
+<p align="center"><font size="6">Gamecube Memory Map<br>
+</font><font size="2">Last Updated Sept. 25th, 2003<br>
+By: Azimer</font></p><p></p>
+<font face="Courier New">
+<p>2.1 Memory Map<p>Gekko Memory Map<p>
+Address Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description<hr>
+0x00000000 - 0x017FFFFF&nbsp;&nbsp;&nbsp; Physical RAM Address.&nbsp; Not 
+accessible from the CPU<br>
+0x80000000 - 0x817FFFFF&nbsp;&nbsp;&nbsp; Cached RAM Address (CPU Accessible)<br>
+0xC0000000 - 0xC17FFFFF&nbsp;&nbsp;&nbsp; Uncached RAM Address (CPU Accessible)<br>
+0xC8000000 - 0xC1FFFFFF&nbsp;&nbsp;&nbsp; Embedded Frame Buffer (EFB) wrapper<br>
+0xCC000000 - 0xCC00FFFF&nbsp;&nbsp;&nbsp; <a href="GameCube%20Hardware%20Registers.htm">Hardware Registers</a><br>
+0xFFF00000 - 0xFFFFFFFF&nbsp;&nbsp;&nbsp; Initial Program Loader (IPL) descrambling wrapper
+</p>
+<p>DSP Memory Map</p>
+<p>Address Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description<hr>
+To be completed...
+</p>
+<p>GP Memory Map</p>
+<p>Address Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description<hr>
+To be completed...
+</p>
+<br><br><br><br>Special Note on IPL by org:<br>
+Developer boards have 48MB of RAM.<BR><BR>IPL is mapped at 0xFFF00000 after 
+hardware reset. It is loaded into upper memory (0x81300000), executed there, and 
+then auto-destroyed.<BR>Special bootstrap program prevent accesses to IPL, after 
+reset. Access to IPL is controlled by 17th bit of 0xCC006800 : <PRE>    Write :
+    0 = Have no effect
+    1 = Disable IPL access
+
+    Read :
+    0 = IPL access enabled
+    1 = IPL access disabled
+</PRE>Example program, to disable IPL : <PRE>void DisableROM()
+{
+    *(u32 *)0xcc006800 |= 0x00004000;
+}
+</PRE>
+</font>
+</body>
+
+</html>

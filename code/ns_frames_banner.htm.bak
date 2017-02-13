@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+
+<TITLE>Apollo</TITLE>
+
+<STYLE TYPE="text/css"> 
+BODY{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+background: URL(../images/apollo_frames_bg_top.gif) fixed no-repeat
+}
+</STYLE>
+</HEAD>
+
+<BODY text="#ffffff" link="#f0f0ff" vlink="#fff0f0" alink="#f0fff0" marginwidth="0" marginheight="0" leftmargin="0" rightmargin="0" topmargin="0">
+
+
+<!-- Banner -->
+
+<layer id="banner" width="468" height="60" left="5" top="44" visibility="show" z-index="15">
+  <!--#include virtual="/add-ad.html" -->
+</layer>
+
+</BODY>
+</HTML>

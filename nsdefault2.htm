@@ -1,0 +1,162 @@
+<HTML>
+<HEAD>
+
+<TITLE>Apollo</TITLE>
+
+<STYLE TYPE="text/css"> 
+BODY{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+background: URL(images/apollo_bg.gif) fixed no-repeat
+}
+
+TD{
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+} 
+
+A{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:active{
+text-decoration: underline;
+color: #ffcccc;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+
+A:hover{
+text-decoration: underline;
+color: #ffffff;
+font-family: Verdana, Geneva,  Helvetica, Arial;
+font-size: 11px;
+}
+</STYLE>
+
+
+<script language="JavaScript1.2">
+<!--
+function changeall(values) {
+
+if  (values!="") {
+
+  document.layers["n64"].visibility = "hide";
+  document.layers["apollo"].visibility = "hide";
+  document.layers["news"].visibility = "hide";
+  document.layers["files"].visibility = "hide";
+  document.layers["status"].visibility = "hide";
+  document.layers["screens"].visibility = "hide";
+  document.layers["devlog"].visibility = "hide";
+  document.layers["links"].visibility = "hide";
+
+  document.layers[values].visibility = "show";
+/*
+
+  document.layers["main_n64"].visibility = "hide";
+  document.layers["info_n64"].visibility = "hide";
+
+  document.layers["main_apollo"].visibility = "hide";
+  document.layers["info_apollo"].visibility = "hide";
+
+  document.layers["main_news"].visibility = "hide";
+  document.layers["info_news"].visibility = "hide";
+
+  document.layers["main_files"].visibility = "hide";
+  document.layers["info_files"].visibility = "hide";
+
+  document.layers["main_status"].visibility = "hide";
+  document.layers["info_status"].visibility = "hide";
+
+  document.layers["main_screens"].visibility = "hide";
+  document.layers["info_screens"].visibility = "hide";
+
+  document.layers["main_devlog"].visibility = "hide";
+  document.layers["info_devlog"].visibility = "hide";
+
+  document.layers["main_links"].visibility = "hide";
+  document.layers["info_links"].visibility = "hide";
+
+  document.layers["main_" + values].visibility = "show";
+  document.layers["info_" + values].visibility = "show";
+*/
+}
+//  document.layers["biglayer"].src = "code/layer_" + values + ".htm";
+}
+
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY onload="javascript:changeall('apollo')" text="#ffffff" link="#f0f0ff" vlink="#fff0f0" alink="#f0fff0" marginwidth="0" marginheight="0" leftmargin="0" rightmargin="0" topmargin="0">
+
+
+<!-- N64 spinner -->
+<layer id="n64_spinner" width="51" height="51" left="67" top="21" visibility="show" z-index="1">
+  <A href="javascript:changeall('n64');"><IMG src="images/n64_spinner.gif" width="51" height="51" border="0"><A/>
+</layer>
+
+<!-- Apollo logo -->
+<layer id="menu_logo" width="81" height="68" left="126" top="22" visibility="show" z-index="2">
+<A href="javascript:changeall('apollo');"><IMG src="images/apollo_menu_logo.gif" width="81" height="68" border="0"></A>
+</layer>
+
+<!-- Copyright -->
+<layer id="menu_copyright" width="300" height="17" left="350" top="448" visibility="show" z-index="3">
+<A href="javascript:changeall('apollo');"><B>Copyright © 2001 The Apollo Project</B></A>
+</layer>
+
+<!-- Menu button: News -->
+<layer id="menu_news" width="62" height="30" left="63" top="104" visibility="show" z-index="4">
+<A href="javascript:changeall('news');"><IMG src="images/apollo_menu_news.gif" width="62" height="30" border="0"></A>
+</layer>
+
+<!-- Menu button: Files -->
+<layer id="menu_files" width="68" height="25" left="46" top="157" visibility="show" z-index="5">
+<A href="javascript:changeall('files');"><IMG src="images/apollo_menu_files.gif" width="68" height="25" border="0"></A>
+</layer>
+
+<!-- Menu button: Screens -->
+<layer id="menu_screens" width="108" height="17" left="39" top="213" visibility="show" z-index="6">
+<A href="javascript:changeall('screens');"><IMG src="images/apollo_menu_screens.gif" width="108" height="17" border="0"></A>
+</layer>
+
+<!-- Menu button: Status -->
+<layer id="menu_status" width="89" height="19" left="41" top="264" visibility="show" z-index="7">
+<A href="javascript:changeall('status');"><IMG src="images/apollo_menu_status.gif" width="89" height="19" border="0"></A>
+</layer>
+
+<!-- Menu button: DevLog -->
+<layer id="menu_devlog" width="104" height="35" left="50" top="303" visibility="show" z-index="8">
+<A href="javascript:changeall('devlog');"><IMG src="images/apollo_menu_devlog.gif" width="104" height="35" border="0"></A>
+</layer>
+
+<!-- Menu button: Links -->
+<layer id="menu_links" width="65" height="35" left="66" top="355" visibility="show" z-index="9">
+<A href="javascript:changeall('links');"><IMG src="images/apollo_menu_links.gif" width="65" height="35" border="0"></A>
+</layer>
+    
+<!-- Banner -->
+<!-- layer id="banner" src="http://ads.admonitor.net/adengine.cgi?F1799|1001|1|iframe|C13866|||_admonitor" width="468" height="60" left="247" top="46" visibility="show" z-index="10"></layer -->
+
+<!-- Background Layer -->
+<layer name="main_bg" id="main_bg" background="images/apollo_iframe_bg.gif" width="490" height="295" left="243" top="147" visibility="show" z-index="11" clip="490,295"></layer>
+
+
+<!-- Main Layers -->
+<layer name="news" id="news" src="code/layer_news.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="15"></layer>
+<layer name="files" id="files" src="code/layer_files.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="18"></layer>
+<layer name="screens" id="screens" src="code/layer_screens.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="21"></layer>
+<layer name="status" id="status" src="code/layer_status.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="24"></layer>
+<layer name="devlog" id="devlog" src="code/layer_devlog.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="27"></layer>
+<layer name="links" id="links" src="code/layer_links.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="30"></layer>
+<layer name="apollo" id="apollo" src="code/layer_apollo.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="33"></layer>
+<layer name="n64" id="n64" src="code/layer_n64.htm" width="353" height="295" left="190" top="137" visibility="hide" z-index="36"></layer>
+
+</BODY>
+</HTML>

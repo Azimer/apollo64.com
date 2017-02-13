@@ -1,0 +1,146 @@
+Compatibility List for Apollo v0.02
+------------------------------------------
+65 Playable - 36 Unplayable - 101 Total tested
+
+* = Not tested by me (Azimer)
+
+- Major contributors:
+  bjz, RatTrap
+
+****************************************************************************************
+Playable (runs independantly of either graphics or audio... but one is present at least)
+****************************************************************************************
+*AeroGauge (U) [!]   					- works (bjz)
+*Aerofighters Assault (Euro).z64                 	- fully playable(asks to save microcode)
+*Airboarders 64 (Euro).v64                       	- fully playable
+*All Star Tennis '99 (U) [!]				- works (bjz)
+Army Men - Air Combat (U) [!] 				- Fully Playble
+*Army Men - Sarge's Heroes 2 (U) [!]			- works (bjz)
+*Asteroids Hyper 64 (U) [!]				- works (bjz)
+*Automobili Lamborghini (U) [o3]			- works,slow (bjz)
+Banjo-Kazooie (U) [!]					- Must use NoSound Plugin
+*Bass Hunter 64 (USA).z64                        	- fully playable(flickers)
+Bassmasters 2000 (U) [!]				- Works but Controller Pack issues
+*Batman Beyond - Return of the Joker (U) [!]		- works (bjz)
+*BattleTanx (U) [!]					- works (bjz)
+*Beetle Adventure Racing! (U) [!]			- works (bjz)
+Blast Corps (U) (V1.0) [!]				- Fully Playable
+Bomberman 64 (U) [!]					- Fully Playable
+*Bomberman Hero (USA).v64                        	- fully playable
+*Bust 'A' Move 2 (Euro).v64                      	- fully playable
+*Bust 'A' Move '99 (USA).z64                     	- fully playable
+Castlevania (U) [!]					- Fully Playable
+*Castlevania - Legacy of Darkness (U) [!].z64 		- fully playable
+*Cruis'n The World  		                        - fully playable
+Diddy Kong Racing (U) (V1.0) [o1][h1] (fixed)		- Fully Playable??? - Sound only
+Disney's Tarzan (U) [!]					- Fully Playable
+Donkey Kong 64 (USA).v64   		                - Fully Playable(does not freeze on intro)(or you can skip story in option)
+*Doraemon - Mittsu no Seireiseki (J) [!].v64  		- fully playable
+Duke Nukem 64 (U) [!]                                   - fully playable
+*Extreme G (USA).v64    	                        - fully playable
+Golden Nugget 64 (U) [h1] (cartname)			- Crashes if RumblePack is enabled
+*Holy Magic Century (Euro - France).n64    		- fully playable(plays to fast needs fps limiter)
+*I.S.S. 64 (Euro).v64            	                - fully playable
+*I.S.S. '98 (USA).z64     	                        - fully playable
+Legend of Zelda, The - Ocarina of Time (U) (V1.0) [!] 	- Fully Playable
+Legend of Zelda 2, The - Majora's Mask (E) [!]		- Fully Playable
+Legend of Zelda 2, The - Majora's Mask (U) [!]		- Fully Playable
+*LEGO Racers (USA).z64  	                        - fully playable
+Mario Kart 64 (U) [o1]					- Fully Playable
+Mario Kart 64 (J) (V1.1) [!]				- Fully Playable
+Mario Party 2 (E) [!]					- Fully Playable (Flashes a lot)
+Monopoly 64 (USA).z64   	                        - fully playable(slow and boring :)
+Ms. Pac-Man Maze Madness (U) [!]			- Fully Playable (need better plugin)
+NFL Blitz (U) [!]					- Fully Playable (need better plugin) (Beta 3)
+NHL Breakaway 99 (E) [!]				- Fully Playable
+Paper Mario (U)						- Fully Playable (Invalid PI xfers)
+Quest 64 (U) [!]					- Fully Playable
+Rampage - World Tour (U) [!]				- Fully Playable
+Ridge Racer 64 (USA).v64    		                - fully playable
+Robotron 64 (U) [!] 					- Works Well
+San Francisco Rush - Extreme Racing (U) [b2]		- Fully Playable
+San Francisco Rush 2049 (U) [!]				- Fully Playable
+Scooby-Doo - Classic Creep Capers (U) [!]		- Fully Playable
+SnowBoard Kids 						- Fully Playable
+StarFox64						- Fully Playable
+Star Soldier Vanishing Earth (J) [h1] (cartname)	- Fully Playable
+Super Mario 64 (U) (V1.0) [!]				- Fully Playable
+Super Mario 64 Shindou Edition (J) [!]			- Fully Playable
+Super Mario 64 (E) [!]					- Fully Playable
+Super Smash Bros. (U) [h2] (AGS intro)			- Fully Playable
+Turok - Dinosaur Hunter					- Fully Playable
+Virtual Pool 64 (U) [!]					- Fully Playable
+Wave Race 64 (U) (V1.0) [!]				- Fully Playable
+Wave Race 64 (J) [h1] (cartname)			- Fully Playable (unable to save) (Bad Timing)
+WCW-nWo Revenge (U) [!]					- Fully Playable??? - Sound only
+WCW vs. nWo - World Tour (U) (V1.0) [!]			- Fully Playable??? - Sound only
+World is Not Enough, The (E) [!]			- Fully Playable
+
+
+****************************************************************************************
+Mostly Playable (runs well but definately has a CPU problem)
+****************************************************************************************
+1080 Snowboarding (JU) [!] 				- Skips the copyright screens 
+							  and Dlists/Alists are scarce
+*64 Hanafuda - Tenshi No Yakusoku (JAP).v64   		- fully playable but has alot of slowdowns
+Clay Fighter 63 1-3 (U) [!]				- Has a lot of odd slowdows like 1080
+							  (Works only in Beta 3)
+*F1 Pole Position (USA).v64                      	- hangs randomly while playing
+
+****************************************************************************************
+Intro (runs the intro but freezes at the copyright/title screen or during a demo in the game)
+****************************************************************************************
+Cruis'n USA (U) (V1.0) [!]				- Shows only the copyright screen
+Doom64							- Will not get past the controller pack
+							  screen.
+Mario Party (E) [b1]					- Write to bad memory (When ignored shows
+							  the lang select screen and N64 logo)
+Mortal Kombat Trilogy (U) (V1.0) [o1]			- Shows Title (Bad Timing)
+South Park (U) [!]					- Shows the Title screen then gets
+							  bogged down with FPU Errors
+
+****************************************************************************************
+Unplayable - Stable (The emulator does not crash/display an error)
+****************************************************************************************
+*A Bug's Life (Euro - France).z64       	        - hangs during intro, fps keep going
+All-Star Baseball 2001 (U) [!] 				- Infinate Loop
+*Command and Conquer (USA).z64                  	- hangs after loading, fps keep going
+*Earthworm Jim 3D (USA).v64                   		- hangs with a weird white screen when loaded, fps keep going
+*Excitebike 64 Kiosk Demo (USA).z64         		- hangs with a black screen when loaded, fps keep going
+*Paperboy (USA).z64                             	- hangs with a weird white screen when loaded, fps keep going
+*Penny Racers (USA).v64                  	        - hangs with a weird white screen when loaded, fps keep going
+Yoshi's Story (U) [!]					- Makes noise and then loops
+
+****************************************************************************************
+Unplayable - Unstable (The emulator will crash or display an error and need to quit)
+****************************************************************************************
+*AI Shogi 3 (J) [!].v64                        		- Crashes after loading
+*Alice no Wakuwaku Trump World (J) [!].v64	        - Crashes after loading
+*All Star Baseball '99 (Euro).v64       	        - Crashes after loading
+*Army Men - Sarge's Heroes (U) [!]			- causes error in apollo.exe (bjz)
+*Banjo-Tooie (A) [!]					- causes error in apollo.exe (bjz)
+Banjo-Tooie (U) [!]					- Syscall Error
+*Body Harvest (Euro).z64                 	        - Crashes after loading
+*Buck Bumble (Euro).v64           	                - Crashes after loading
+Conker's Bad Fur Day (U) [!]				- Write to bad memory
+*Chameleon Twist (USA).v64              	        - Controller pack error
+*F1 World Grand Prix 2 (Euro).v64	                - Controller pack error
+GoldenEye 007 (U) [o1]					- Errors out (fails boot?)
+*Harvest Moon 64 (USA).z64         		        - Crashes after loading
+*Kirby 64 - The Crystal Shards (U) [!].rom      	- Crashes after loading
+Mace - The Dark Age (U) [o1]				- Crashes Randomly... Very Very odd
+Mario Tennis (J) [!]					- Write to bad memory
+*Neon Genesis Evangelion (J) [!].v64  		        - Error Error Error, EEP-ROM Size is 4K???
+Perfect Dark (V1.0) (U) [!]				- Write to bad memory
+Star Wars - Rogue Squadron (U) [!]			- Gets into game code but errors
+							  out after a few Dlists/Alists
+
+
+
+// Untested
+
+
+
+Zelda no Densetsu 2 - Mujura no Kamen (J) [!]
+
+
