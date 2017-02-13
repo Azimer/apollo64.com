@@ -1,9 +1,0 @@
-MACE 		: 0x0040d577 - 0x2f820a4c "read"	- PC = 8006D948 (Access Violation at 1F800A4C)
-Castlevania64	: 0x0040da80 - 0x10820000 "written"	- PC = 800172D0 (Access Violation at 00800000)
-Blast Corps	: 0x0040b962 - 0x17476084 "read" 	- PC = 802A2814 (NI Called)
-ClayFighter 63	: 0x0040d04a - 0x1405ec81 "read"	- PC = 8036EC62 (Access Violation at 0403EC81)
-MK Trilogy	: 0x0040e48c - 0x175c8b70 "written"	- PC = 80098A64 (Access Violation at 075A8B70)
-Cruis'N USA	: 0x0040ffb5 - 0x3001ffff "written"	- PC = 80125948 (Access Violation at 1FFFFFFF)
-VPOOL		: 0x0040d0ba - 0x1e6530aa "written"	- PC = 8008DE9C (Access Violation at 0E6330AA)
-WCW/NWO Revenge : 0x0040db15 - 0x3001ff05 "written"	- PC = 80003850 (NI Called)
-Perfect Dark	: COP2 is Unusable...
