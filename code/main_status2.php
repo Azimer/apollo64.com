@@ -1,4 +1,4 @@
-<? include('apollo_head.htm'); ?>
+<?php include('apollo_head.htm'); ?>
 
 <TABLE border="0" cellpadding="10" cellspacing="0" width="475">
 <TR>
